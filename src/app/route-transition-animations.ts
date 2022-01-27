@@ -26,15 +26,15 @@ export const routeTransitionAnimation = trigger('pageAnimation', [
         position: 'relative',
         top: 0,
         right: 0,
-        width: '100%',
+        width: '100%'
       }),
     ]),
     group([
       query(':enter', [
-        style({ opacity: 0, right: '100%' }),
-        animate('300ms ease-in-out', style({ opacity: 1, right: '0%' })),
+        style({ right: '100%' }),
+        animate('300ms ease-in-out', style({ right: '0%' })),
       ]),
-      query(':leave', [animate('300ms ease-in-out', style({ opacity: 0, right: '100%' }))]),
+      query(':leave', [animate('300ms ease-in-out', style({ right: '100%' }))]),
     ]),
   ]),
 
