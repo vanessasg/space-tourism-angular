@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="image">
+      <img src="{{europa.images.webp}}" alt="europa image">
+  </div>
+  <div class="content">
+    <app-destination-nav *ngIf="europa"></app-destination-nav>
+    <div class="title">{{europa.name}}</div>
+    <div class="description">{{europa.description}}</div>
+    <div class="dist-data">
+      <div class="distance">
+        <div class="title">AVG. DISTANCE</div>
+        <div class="km">{{europa.distance}}</div>
+      </div>
+      <div class="time">
+        <div class="title">
+          EST. TRAVEL TIME
+        </div>
+        <div class="days">{{europa.travel}}</div>
+      </div>
+    </div>
+  </div>
+</div>

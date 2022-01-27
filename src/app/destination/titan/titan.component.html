@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="image">
+      <img src="{{titan.images.webp}}" alt="titan image">
+  </div>
+  <div class="content">
+    <app-destination-nav *ngIf="titan"></app-destination-nav>
+    <div class="title">{{titan.name}}</div>
+    <div class="description">{{titan.description}}</div>
+    <div class="dist-data">
+      <div class="distance">
+        <div class="title">AVG. DISTANCE</div>
+        <div class="km">{{titan.distance}}</div>
+      </div>
+      <div class="time">
+        <div class="title">
+          EST. TRAVEL TIME
+        </div>
+        <div class="days">{{titan.travel}}</div>
+      </div>
+    </div>
+  </div>
+</div>

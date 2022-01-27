@@ -1,0 +1,145 @@
+.main-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .image {
+    width: 40%;
+    height: auto;
+    max-width: 445px;
+    min-width: 170px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    width: 50%;
+    max-width: 450px;
+
+    .title {
+      font-size: 100px;
+      line-height: 115px;
+      font-family: var(--font-family-bellefair);
+      text-transform: uppercase;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 32px;
+      color: var(--color-lilla);
+      font-family: var(--font-family-barlow);
+      font-weight: 400;
+    }
+
+    .dist-data {
+      border-top: 1px solid #383B4B;
+      margin-top: 55px;
+      padding-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+
+      .distance,
+      .time {
+        width: 50%;
+
+        .title {
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 2.38px;
+          font-family: var(--font-family-barlow--cond);
+          color: var(--color-lilla);
+        }
+
+        .km,
+        .days {
+          font-family: var(--font-family-bellefair);
+          font-size: 28px;
+          line-height: 50px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 65px;
+
+    .image {
+      width: 100%;
+      margin-bottom: 53px;
+      max-width: 300px;
+    }
+
+    .content {
+      width: 85%;
+      max-width: none;
+
+      .title {
+        margin-top: 32px;
+        font-size: 80px;
+        line-height: 92px;
+      }
+
+      .description {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 445px) {
+  .main-container {
+    width: 100%;
+
+    .image {
+      max-width: 170px;
+      margin-bottom: 26px;
+    }
+
+    .content {
+      width: 100%;
+
+      .title {
+        margin-top: 20px;
+        font-size: 56px;
+        line-height: 64px;
+      }
+
+      .description {
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+      .dist-data {
+        margin-top: 32px;
+        padding-top: 10px;
+        display: block;
+        text-align: center;
+
+        .distance,
+        .time {
+          width: 100%;
+
+          .km, .days{
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}

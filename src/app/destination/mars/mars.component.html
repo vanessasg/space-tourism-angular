@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="image">
+      <img src="{{mars.images.webp}}" alt="mars image">
+  </div>
+  <div class="content">
+    <app-destination-nav *ngIf="mars"></app-destination-nav>
+    <div class="title">{{mars.name}}</div>
+    <div class="description">{{mars.description}}</div>
+    <div class="dist-data">
+      <div class="distance">
+        <div class="title">AVG. DISTANCE</div>
+        <div class="km">{{mars.distance}}</div>
+      </div>
+      <div class="time">
+        <div class="title">
+          EST. TRAVEL TIME
+        </div>
+        <div class="days">{{mars.travel}}</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="main-container">
+  <div class="content">
+    <app-tech-nav></app-tech-nav>
+    <div class="content-text">
+      <div class="title">THE TERMINOLOGY...</div>
+      <div class="name">{{spaceport.name}}</div>
+      <div class="description">{{spaceport.description}}</div>
+    </div>
+  </div>
+  <div class="image spaceport">
+    <picture>
+      <source media="(min-width: 769px)" srcset="{{spaceport.images.portrait}}">
+      <source media="(max-width: 768px" srcset="{{spaceport.images.landscape}}">
+      <img src="{{techImage}}" alt="spaceport">
+    </picture>
+  </div>
+</div>

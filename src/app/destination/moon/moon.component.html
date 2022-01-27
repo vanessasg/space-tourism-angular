@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="image">
+      <img src="{{moon.images.webp}}" alt="moon image">
+  </div>
+  <div class="content">
+    <app-destination-nav *ngIf="moon"></app-destination-nav>
+    <div class="title">{{moon.name}}</div>
+    <div class="description">{{moon.description}}</div>
+    <div class="dist-data">
+      <div class="distance">
+        <div class="title">AVG. DISTANCE</div>
+        <div class="km">{{moon.distance}}</div>
+      </div>
+      <div class="time">
+        <div class="title">
+          EST. TRAVEL TIME
+        </div>
+        <div class="days">{{moon.travel}}</div>
+      </div>
+    </div>
+  </div>
+</div>

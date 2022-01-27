@@ -1,0 +1,68 @@
+.destination-container {
+  height: 100%;
+  min-height: 100vh;
+  min-width: 200px;
+  padding-bottom: 0;
+  background-image: url(../../assets/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  font-family: var(--font-family-barlow-cond);
+  color: var(--color-white);
+
+  .destination-content {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding-top: 210px;
+
+    .title {
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 4.72px;
+      margin-bottom: 100px;
+
+      span {
+        opacity: 25%;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .destination-container {
+    .destination-content {
+      padding-top: 136px;
+
+      .title {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.38px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .destination-container {
+    background-image: url(../../assets/destination/background-destination-tablet.jpg);
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .destination-container {
+    background-image: url(../../assets/destination/background-destination-mobile.jpg);
+
+    .destination-content {
+      .title {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

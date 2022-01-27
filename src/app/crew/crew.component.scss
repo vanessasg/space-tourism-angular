@@ -1,0 +1,67 @@
+.crew-container {
+  height: 100%;
+  min-height: 100vh;
+  min-width: 200px;
+  padding-bottom: 0;
+  background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  font-family: var(--font-family-barlow-cond);
+  color: var(--color-white);
+
+  .crew-content {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding-top: 210px;
+
+    .title {
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 4.72px;
+
+      span {
+        opacity: 25%;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .crew-container {
+    .crew-content {
+      padding-top: 136px;
+
+      .title {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.38px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crew-container {
+    background-image: url(../../assets/crew/background-crew-tablet.jpg);
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .crew-container {
+    background-image: url(../../assets/crew/background-crew-mobile.jpg);
+    .crew-content {
+      padding-top: 88px;
+      .title {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

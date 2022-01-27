@@ -1,0 +1,17 @@
+<div class="main-container">
+  <div class="content">
+    <app-tech-nav></app-tech-nav>
+    <div class="content-text">
+      <div class="title">THE TERMINOLOGY...</div>
+      <div class="name">{{vehicle.name}}</div>
+      <div class="description">{{vehicle.description}}</div>
+    </div>
+  </div>
+  <div class="image vehicle">
+    <picture>
+      <source media="(min-width: 769px)" srcset="{{vehicle.images.portrait}}">
+      <source media="(max-width: 768px" srcset="{{vehicle.images.landscape}}">
+      <img src="{{techImage}}" alt="launch vehicle">
+    </picture>
+  </div>
+</div>

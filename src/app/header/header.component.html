@@ -1,0 +1,20 @@
+<div class="header-container">
+  <div class="logo">
+    <img src="assets/header/logo.svg" alt="logo">
+  </div>
+  <div class="nav" [ngClass]='open ? "open" : "close"'>
+    <div class="menu-item" routerLink="/home" (click)="toggleMenu()" routerLinkActive="active-item" ><span>00</span>HOME</div>
+    <div class="menu-item" routerLink="/destination" (click)="toggleMenu()" routerLinkActive="active-item" ><span>01</span>DESTINATION</div>
+    <div class="menu-item" routerLink="/crew" (click)="toggleMenu()" routerLinkActive="active-item" ><span>02</span>CREW</div>
+    <div class="menu-item" routerLink="/technology" (click)="toggleMenu()" routerLinkActive="active-item" ><span>03</span>TECHNOLOGY</div>
+  </div>
+
+  <div class="nav-icon" (click)="toggleMenu()">
+    <div *ngIf="open">
+      <img src="../../assets/header/icon-close.svg" alt="close-menu">
+    </div>
+    <div *ngIf="!open">
+      <img src="../../assets/header/icon-hamburger.svg" alt="open-menu">
+    </div>
+  </div>
+</div>
