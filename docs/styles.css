@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-blue: #0B0D17;
+  --color-lilla: #D0D6F9;
+  --color-white: #ffffff;
+  --font-family-barlow: "Barlow", sans-serif;
+  --font-family-barlow-cond: "Barlow Condensed", sans-serif;
+  --font-family-bellefair: "Bellefair", serif;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--color-blue);
+}
+@media screen and (max-width: 615px) {
+  html {
+    scrollbar-width: none !important;
+    /* For Firefox */
+    -ms-overflow-style: none !important;
+    /* For Internet Explorer and Edge */
+  }
+
+  html::-webkit-scrollbar {
+    width: 0px !important;
+    /* For Chrome, Safari, and Opera */
+  }
+}
+
+/*# sourceMappingURL=styles.css.map*/
